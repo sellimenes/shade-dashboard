@@ -27,7 +27,7 @@ const Sidebar = (props: Props) => {
   return (
     <aside
       className={cn(
-        "h-full fixed shadow-xl z-[10000] transition-all duration-300 overflow-hidden",
+        "h-screen relative shadow-xl z-[10000] transition-all duration-300 overflow-hidden",
         open ? "w-64" : "w-12"
       )}
     >
