@@ -17,10 +17,10 @@ const HamburgerButton = ({ onClick }: Props) => {
   return (
     <button
       className={cn(
-        "flex flex-col h-12 w-12 justify-center items-center group max-w-max absolute right-1",
+        "flex flex-col h-12 w-12 justify-center items-center group max-w-max absolute scale-[65%]",
         !isOpen
-          ? "right-1/2 transform translate-x-1/2 duration-300 scale-75"
-          : "scale-50"
+          ? "right-1/2 transform translate-x-1/2 duration-300 "
+          : "right-1"
       )}
       onClick={handleClick}
     >
