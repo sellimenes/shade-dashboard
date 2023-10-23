@@ -28,7 +28,7 @@ export default function RootLayout({
         >
           <main className="flex">
             <Sidebar />
-            <div className="flex-1 container mt-16">{children}</div>
+            <div className="mt-16 container">{children}</div>
           </main>
         </ThemeProvider>
       </body>

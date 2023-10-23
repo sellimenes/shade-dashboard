@@ -1,7 +1,9 @@
 "use client";
 
+import SessionsCard from "@/components/sessions-card";
 import SalesOverviewCard from "@/components/sales-overview-card";
 import { useTheme } from "next-themes";
+import RatingsCard from "@/components/ratings-card";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -21,8 +23,8 @@ export default function Home() {
       </div>
       <div className="flex items-stretch gap-4">
         <SalesOverviewCard className="flex-[4]" />
-        <SalesOverviewCard className="flex-[2]" />
-        <SalesOverviewCard className="flex-[2]" />
+        <SessionsCard className="flex-[2]" />
+        <RatingsCard className="flex-[2]" />
       </div>
     </>
   );
