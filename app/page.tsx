@@ -4,6 +4,7 @@ import SessionsCard from "@/components/sessions-card";
 import SalesOverviewCard from "@/components/sales-overview-card";
 import { useTheme } from "next-themes";
 import RatingsCard from "@/components/ratings-card";
+import LastSalesTable from "@/components/last-sales-table";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -25,6 +26,10 @@ export default function Home() {
         <SalesOverviewCard className="flex-[4]" />
         <SessionsCard className="flex-[2]" />
         <RatingsCard className="flex-[2]" />
+      </div>
+      <div className="mt-8">
+        <h2 className="text-3xl mb-2">Last Sales</h2>
+        <LastSalesTable />
       </div>
     </>
   );
